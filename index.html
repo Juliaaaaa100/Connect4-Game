@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- making the site more responsive/user-friendly  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connect 4</title>
+  <link href="style.css" rel="stylesheet">
+
+  <!-- import nice font from goole's api -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1>Connect 4</h1>
+  <div id="board">
+  </div>
+
+  <!-- add nice box/modal when the user wins or looses  -->
+  <!-- it displayes content on top of the main one -->
+  <div id="modal-container">
+    <div id="modal-content">
+      <h1>Game Over</h1>
+      <p id="modal-message">The game is a draw</p>
+      <button id="reset">Play Again?</button>
+    </div>
+  </div>
+  <div id="game-container">
+</div>
+
+<!-- add an audio element that allows us to embed audio content directly into our webpages  -->
+<audio id="background-audio" loop>
+    <source src="Neverland.mp3" type="audio/mpeg">
+    <!-- the message is used as a fallback in case the file is not working  -->
+    Your browser does not support the audio element
+</audio>
+</audio>
+
+<!-- // this script will create 42 divs instead of hardcoding them in html  -->
+  <script src="main.js"></script>
+</body>
+</html>
